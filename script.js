@@ -1,8 +1,9 @@
 //your JS code here. If required.
 
-// function name() {
-// 	let ff = document.getElementById("fname");
-// 	ff.value = ff.value.toUpperCase();
+ let input = document.getElementById("fname");
 
-// 	console.log(ff);
-// }
+input.addEventListener("blur" ,Onblur);
+function Onblur() {
+	let capName=input.value;
+	input.value=capName.toUpperCase()
+}
